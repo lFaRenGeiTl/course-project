@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>840</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>840</width>
+    <height>398</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ЖКХ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton[objectName=&quot;back_button&quot;],
+QPushButton[objectName=&quot;back_button_2&quot;],
+QPushButton[objectName=&quot;back_button_3&quot;],
+QPushButton[objectName=&quot;back_button_4&quot;], 
+QPushButton[objectName=&quot;back_button_5&quot;], 
+QPushButton[objectName=&quot;back_button_6&quot;], 
+QPushButton[objectName=&quot;back_button_7&quot;],
+QPushButton[objectName=&quot;back_button_8&quot;] { background: transparent; }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>841</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>841</width>
+      <height>401</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>841</width>
+      <height>401</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="main_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QComboBox" name="select_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Выберите таблицу</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>salespeople</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>customers</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>orders</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="open_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>161</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Открыть</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>310</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Удалить элемент</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_data">
+      <property name="geometry">
+       <rect>
+        <x>205</x>
+        <y>81</y>
+        <width>621</width>
+        <height>301</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить элемент</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="change_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Изменить элемент</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_table">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вывести в...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="add_street_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QLineEdit" name="id_street">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>130</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="name_street">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Введите улицу</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_street_button">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>240</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>back_button_icon</zorder>
+     <zorder>id_street</zorder>
+     <zorder>name_street</zorder>
+     <zorder>add_street_button</zorder>
+     <zorder>back_button</zorder>
+    </widget>
+    <widget class="QWidget" name="add_account_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="back_button_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="id_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_account_button">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>350</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="number_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>60</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите № счета</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="id_street_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>110</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="flat_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>260</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите № квартиры</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="full_name_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>310</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите ФИО</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="frame_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите корпус дома</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="house_account">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите № дома</string>
+      </property>
+     </widget>
+     <zorder>back_button_icon_2</zorder>
+     <zorder>back_button_2</zorder>
+     <zorder>id_account</zorder>
+     <zorder>add_account_button</zorder>
+     <zorder>number_account</zorder>
+     <zorder>id_street_account</zorder>
+     <zorder>flat_account</zorder>
+     <zorder>full_name_account</zorder>
+     <zorder>frame_account</zorder>
+     <zorder>house_account</zorder>
+    </widget>
+    <widget class="QWidget" name="add_service_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="back_button_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="id_service">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>130</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_service_button">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>300</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="name_service">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите название тарифа</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rate_service">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>250</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите тариф</string>
+      </property>
+     </widget>
+     <zorder>back_button_icon_3</zorder>
+     <zorder>back_button_3</zorder>
+     <zorder>id_service</zorder>
+     <zorder>add_service_button</zorder>
+     <zorder>name_service</zorder>
+     <zorder>rate_service</zorder>
+    </widget>
+    <widget class="QWidget" name="add_accrual_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="back_button_icon_4">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button_4">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="id_accrual">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="quantity_accrual">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>240</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите количество</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="id_account_accrual">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>140</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="id_service_accrual">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_accrual_button">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>290</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="delete_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QListWidget" name="id_list_delete">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>311</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_button">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>280</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="id_input_delete">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>230</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите ID для удаления</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>back_button_icon_5</zorder>
+     <zorder>back_button_5</zorder>
+     <zorder>id_list_delete</zorder>
+     <zorder>delete_button</zorder>
+     <zorder>id_input_delete</zorder>
+    </widget>
+    <widget class="QWidget" name="change_choice_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QComboBox" name="id_change">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>130</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="type_change">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="open_change">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>250</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Открыть</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>back_button_icon_6</zorder>
+     <zorder>back_button_6</zorder>
+     <zorder>id_change</zorder>
+     <zorder>type_change</zorder>
+     <zorder>open_change</zorder>
+    </widget>
+    <widget class="QWidget" name="change_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QLabel" name="id_select_change">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID - </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="type_select_change">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>90</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Изменяемый тип - </string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="new_change">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>781</width>
+        <height>191</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="change_button">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>330</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>arrow_back_FILL0_wght400_GRAD0_opsz48.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>back_button_icon_7</zorder>
+     <zorder>back_button_7</zorder>
+     <zorder>id_select_change</zorder>
+     <zorder>type_select_change</zorder>
+     <zorder>new_change</zorder>
+     <zorder>change_button</zorder>
+    </widget>
+    <widget class="QWidget" name="output_page">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>841</width>
+       <height>401</height>
+      </size>
+     </property>
+     <widget class="QPushButton" name="output_button">
+      <property name="geometry">
+       <rect>
+        <x>329</x>
+        <y>280</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вывод</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_button_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_button_icon_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../icons/back_arrow.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="select_extension">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>141</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>EXCEL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JSON</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="select_output_type">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>210</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Лицевые счета</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Извещение</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Таблица</string>
+       </property>
+      </item>
+     </widget>
+     <zorder>back_button_icon_8</zorder>
+     <zorder>output_button</zorder>
+     <zorder>back_button_8</zorder>
+     <zorder>select_extension</zorder>
+     <zorder>select_output_type</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
